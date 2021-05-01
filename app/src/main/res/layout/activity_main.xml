@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animal Finder"
+        android:textColor="@color/main_text"
+        android:textColorHighlight="@color/white"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="100sp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:text="Play Game"
+        android:onClick="play"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/scoreView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Point"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Time"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
