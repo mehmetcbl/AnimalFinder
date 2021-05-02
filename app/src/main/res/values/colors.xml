@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_bg">#caf7e3</color>
     <color name="main_text">#343f56</color>
+    <color name="gradblue">#0099F7</color>
 </resources>

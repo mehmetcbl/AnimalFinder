@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ceng427.animalfinder">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -9,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalFinder">
-        <activity android:name=".Game"></activity>
+        <activity android:name=".Result_Score"></activity>
+        <activity android:name=".Levels.Level5" />
+        <activity android:name=".Levels.Level4" />
+        <activity android:name=".Levels.Level3" />
+        <activity android:name=".Levels.Level2" />
+        <activity android:name=".Levels.Level1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/main_bg">
-
-    <TextView
-        android:id="@+id/textView"
+    android:background="@drawable/gradient_background">
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Animal Finder"
-        android:textColor="@color/main_text"
-        android:textColorHighlight="@color/white"
-        android:textSize="35sp"
-        android:gravity="center"
         android:layout_weight="1"
+        android:layout_marginTop="25sp"
         android:layout_marginBottom="100sp"
-        />
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/button"
@@ -41,6 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Best Point"
+            android:textColor="@color/gradblue"
+            android:shadowColor="@color/white"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             />
@@ -59,6 +60,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Best Time"
+            android:textColor="@color/gradblue"
+            android:shadowColor="@color/white"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             />
@@ -67,12 +73,14 @@
             android:id="@+id/time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="0s"
+            android:text="24s"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             />
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>
